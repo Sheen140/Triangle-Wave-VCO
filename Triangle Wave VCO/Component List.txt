@@ -1,0 +1,13 @@
+T1=T2=T4=T6= 2N3904 SOT-23
+T5 = 2N3906 SOT-23
+T3 = 2N7002 SOT-323 variant (SOT-23 will work in a pinch)
+
+All Capacitors and Resistors are 0603. Specific values of the capacitor/resistors depend on the desired frequency range of the oscillator.
+
+The diode D1 is SOD-123 diode. A small signal diode or a schottky diode should work fine. 
+
+In order to decrease the operating frequency of the circuit try increasing the value of C2 and increasing the value of R7. You can also adjust the resistors in the schmitt trigger section of the circuit (R1,R2, and R3) to adjust the frequency, but this will also effect the amplitude of the generated triangle wave. If this doesn't matter to you, try decreasing the overall value of these resistors and minimize the resistance difference between R1 & R2 while also reducing R3's value as a percentage compared to R1 & R2 (always trying to keep R3 between about 7% to 35% of the value of R1 or R2).
+
+
+
+
